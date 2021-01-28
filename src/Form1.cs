@@ -14,6 +14,11 @@ namespace UnicodeInWinForms
 	{
 		public Form1()
 		{
+			// You can't change CompatibleTextRenderingDefault for Application after container has called it once. You'll get:
+			// System.InvalidOperationException:
+			// SetCompatibleTextRenderingDefault must be called before the first IWin32Window object is created in the application.
+			// Application.SetCompatibleTextRenderingDefault(false);
+
 			InitializeComponent();
 		}
 	}

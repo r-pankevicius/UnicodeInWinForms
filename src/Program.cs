@@ -15,7 +15,13 @@ namespace UnicodeInWinForms
 		static void Main()
 		{
 			Application.EnableVisualStyles();
-			Application.SetCompatibleTextRenderingDefault(false);
+
+			// This is what WinForms app wizard creates today
+			//Application.SetCompatibleTextRenderingDefault(false);
+
+			// This is what you may expect if running in "old container"
+			Application.SetCompatibleTextRenderingDefault(true);
+
 			Application.Run(new Form1());
 		}
 	}
