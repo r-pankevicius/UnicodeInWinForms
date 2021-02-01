@@ -1,13 +1,13 @@
 # Unicode In WinForms
 
 Use [CompatibleTextRendering](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.label.usecompatibletextrendering?view=netframework-4.8)=false
-to avoid issues displaying Unicode characters, see image below.
+to avoid issues displaying Unicode **Emoji** characters, see image below.
 
 ![](./assets/UseCompatibleTextRenderingFalseToSupportUnicode.png "You'll see this if you run the app")
 
 ## But that's too easy if you control the launcher app
 
-Change Main() method in Program.cs to this and you'll run into "Ancient launcher" situation (like [here](https://stackoverflow.com/a/25387037/1175698)):
+Change Main() method in Program.cs to this and you'll run into "Ancient launcher" situation (like [here](https://stackoverflow.com/a/25387037/1175698), I was using ArcMap as a container):
 
 ```csharp
 /// <summary>
